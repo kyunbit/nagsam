@@ -243,4 +243,17 @@
     })
   });
 
+  /*
+Bizz Bar
+*/
+
+// $("#bizzbar").effect("bounce","slow");
+// $("open").slideUp()})});$(document).ready(function()$("#bizzbar").effect("bounce","slow");
+// $("close").click(function(){$("#bizzbar").slideUp();$("open").slideDown()});
+
+// $("open").click(function(){$("#bizzbar").effect("bounce","slow");$("open").slideUp()})});$(document).ready(function(){$("#bizzbar").effect("bounce","slow");$("close").click(function(){$("#bizzbar").slideUp();$("open").slideDown()})
+ 
+
 })()
+
+$(document).ready(function(){$("open").click(function(){$("#bizzbar").effect("bounce","slow");$("open").slideUp()})});$(document).ready(function(){$("#bizzbar").effect("bounce","slow");$("close").click(function(){$("#bizzbar").slideUp();$("open").slideDown()})});
