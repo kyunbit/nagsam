@@ -24,6 +24,11 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!--Vendor JS files-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
@@ -32,6 +37,13 @@
 </head>
 
 <body>
+  <div id='bizzbar'>
+    <p class='bizztext'>Announcement: New student enrollment has started. Contact us ASAP.
+      <!-- <button class='bizzbutton'>Click me</button> -->
+    </p>
+    <close></close>
+  </div>
+  <open></open>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -42,9 +54,9 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Who</a></li>
+          <li><a class="nav-link scrollto" href="#about">What</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Social Work</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -64,7 +76,7 @@
             </ul>
           </li> -->
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-          <li><a class="getstarted scrollto" href="#contact">Join Us</a></li>
+          <li><a class="getstarted scrollto" href="#contact">Help Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -327,7 +339,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h2>Social Work</h2>
           <p>Our work aims to break the vicious cycle of poverty and social isolation and to restore hope for a better future.
             We believe that every person has the right to access resources and opportunities in order to live and develop with dignity and
             to become an active and contributing member of our society.</p>
@@ -981,8 +993,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Want to be a part?</h2>
-          <p>Please write to us if you would like to get involved and become part of our journey in transforming lives.</p>
+          <h2>How can you help?</h2>
+          <p>Please consider donating or volunteering to become part of our journey towards transforming lives.</p>
         </div>
 
         <div class="row">
@@ -1009,14 +1021,14 @@
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Call Us</h3>
-                  <p>+1 +91 9874 080 377</p>
+                  <p>+91 9874 080 377</p>
                 </div>
               </div>
             </div>
 
           </div>
 
-          <div class="col-lg-6 mt-4 mt-md-0">
+          <!-- <div class="col-lg-6 mt-4 mt-md-0">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -1039,9 +1051,35 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+          </div> -->
+
+          <div class="col-lg-6">
+            <div class="info-box mt-4">
+              <i class='bx bx-donate-heart' ></i>
+              <h3>Donate (80G eligible) </h3>
+              <!-- <h4></h4> -->
+              <br>
+              <p>Nagarik Samity Panihati</p>
+              <p>SB a/c 01870110084960</p>
+              <p>UCO Panihati</p>
+              <p>IFSC:UCBA0000187</p>
+              <p>Email:nagsam100@gmail.com</p>
+            </div>
+            <div class="info-box mt-4">
+              <i class='bx bx-donate-heart' ></i>
+              <h3>Volunteer</h3>
+              <br>
+              <p>Teach</p>
+              <p>Organize distribution of blankets, clothing and dry food</p>
+              <p>Organize medical checkup and blood collection drives</p>
+              
+            </div>
           </div>
 
+
         </div>
+
+
 
       </div>
     </section><!-- End Contact Section -->
