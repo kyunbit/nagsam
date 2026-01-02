@@ -25,13 +25,12 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!--Vendor JS files-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <link rel="preload" as="image" href="assets/img/hero-img.png">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link href="assets/css/style.min.css" rel="stylesheet">
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js" defer></script>
 
 
 </head>
@@ -50,7 +49,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <!-- Uncomment below if you prefer to use an image logo -->
-     <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+     <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid" width="500" height="500" decoding="async"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -58,7 +57,7 @@
           <li><a class="nav-link scrollto" href="#about">What</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Social Work</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="forms/admission_form_23.pdf" target="_blank">Admission Form <img src="assets/img/newicon.gif" alt=""></a></li>
+          <li><a class="nav-link scrollto" href="forms/admission_form_23.pdf" target="_blank">Admission Form <img src="assets/img/newicon.gif" alt="" width="30" height="14" decoding="async"></a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -92,7 +91,7 @@
       <h1>Nagarik Samity Panihati</h1>
       <h2>80G certified NGO committed to health, education and environmental upliftment of 24 Parganas and surrounding districts of West Bengal</h2>
       <a href="#about" class="btn-get-started scrollto">What we do?</a>
-      <img src="assets/img/hero-img.png" class="img-fluid hero-img" alt="" data-aos="zoom-in" data-aos-delay="150">
+      <img src="assets/img/hero-img.png" class="img-fluid hero-img" alt="" data-aos="zoom-in" data-aos-delay="150" width="500" height="500" decoding="async" fetchpriority="high">
     </div>
 
   </section><!-- End Hero -->
@@ -101,10 +100,10 @@
         <div class="row no-gutters">
           	<div class="content col-xl-12 d-flex align-items-stretch" data-aos="fade-right">
                 <div class="content">
-                <img src="assets/img/announcement.gif" class="img-fluid hero-img" alt="" data-aos="zoom-in" data-aos-delay="150"><br><br>
+                <img src="assets/img/announcement.gif" class="img-fluid hero-img" alt="" data-aos="zoom-in" data-aos-delay="150" width="1154" height="288" decoding="async"><br><br>
                   <hr>
                   <br><br>
-                  <img src="assets/img/announcement_1.gif" class="img-fluid hero-img" alt="" data-aos="zoom-in" data-aos-delay="150">
+                  <img src="assets/img/announcement_1.gif" class="img-fluid hero-img" alt="" data-aos="zoom-in" data-aos-delay="150" width="1154" height="86" decoding="async">
                 </div>
         	</div>
      	</div>
@@ -112,7 +111,7 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about cv-auto">
       <div class="container">
 
         <div class="row no-gutters">
@@ -147,7 +146,7 @@
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                   <!-- <i class="bx bx-shield"></i> -->
-                  <!-- <img src="assets/img/icons8-student-64.png" class="img-fluid" alt=""> -->
+                  <!-- <img src="assets/img/icons8-student-64.png" class="img-fluid" alt="" width="64" height="64" decoding="async" loading="lazy"> -->
                   <span class="iconify" data-icon="bx:book-reader" data-width="100" data-height="100"></span>                  
                   <h4>1000+</h4>
                   <p>Number of Students</p>
@@ -167,27 +166,27 @@
         <div class="row">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" width="400" height="173" decoding="async" loading="lazy">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" width="400" height="140" decoding="async" loading="lazy">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" width="400" height="142" decoding="async" loading="lazy">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" width="400" height="219" decoding="async" loading="lazy">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" width="400" height="142" decoding="async" loading="lazy">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" width="400" height="125" decoding="async" loading="lazy">
           </div>
 
         </div>
@@ -196,7 +195,7 @@
     </section>End Clients Section -->
 
     <!-- ======= Features Section ======= -->
-    <section id="features" class="features" data-aos="fade-up">
+    <section id="features" class="features cv-auto" data-aos="fade-up">
       <div class="container">
 
         <div class="section-title">
@@ -206,7 +205,7 @@
 
         <div class="row content">
           <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/2.png" class="img-fluid" alt="">
+            <img src="assets/img/2.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
           </div>
           <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
             <h3>Environmental Initiatives</h3>
@@ -229,7 +228,7 @@
 
         <div class="row content">
           <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-            <img src="assets/img/10.png" class="img-fluid" alt="">
+            <img src="assets/img/10.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
             <h3>Education Initiatives</h3>
@@ -258,7 +257,7 @@
 
         <div class="row content">
           <div class="col-md-5" data-aos="fade-right">
-            <img src="assets/img/7.png" class="img-fluid" alt="">
+            <img src="assets/img/7.png" class="img-fluid" alt="" width="552" height="452" decoding="async" loading="lazy">
           </div>
           <div class="col-md-7 pt-5" data-aos="fade-left">
             <h3>Healthcare Initiatives</h3>
@@ -279,7 +278,7 @@
 
         <div class="row content">
           <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-            <img src="assets/img/3.jpeg" class="img-fluid" alt="">
+            <img src="assets/img/3.jpeg" class="img-fluid" alt="" width="1921" height="1201" decoding="async" loading="lazy">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
             <h3>Social Initiatives</h3>
@@ -301,7 +300,7 @@
 
     <!-- ======= Steps Section =======
 
-    <section id="steps" class="steps">
+    <section id="steps" class="steps cv-auto">
       <div class="container">
 
         <div class="row no-gutters" data-aos="fade-up">
@@ -348,7 +347,7 @@
     </section><!-- End Steps Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio cv-auto">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -373,7 +372,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-healthcare">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/medical.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/medical.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Healthcare 1</h4>
                 <p>Healthcare</p>
@@ -387,7 +386,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-healthcare">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/medical1.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/medical1.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Healthcare 2</h4>
                 <p>Healthcare</p>
@@ -401,7 +400,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-healthcare">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/medical2.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/medical2.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Healthcare 2</h4>
                 <p>Healthcare</p>
@@ -415,7 +414,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/2.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/2.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Social 3</h4>
                 <p>Social</p>
@@ -429,7 +428,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/education1.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/education1.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Education 1</h4>
                 <p>Education</p>
@@ -443,7 +442,7 @@
  
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/education2.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/education2.png" class="img-fluid" alt="" width="672" height="500" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Education 1</h4>
                 <p>Education</p>
@@ -457,7 +456,7 @@
          
           <div class="col-lg-4 col-md-6 portfolio-item filter-education">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/4.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/4.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Education 2</h4>
                 <p>Education</p>
@@ -471,7 +470,7 @@
 
            <div class="col-lg-4 col-md-6 portfolio-item filter-education">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/20.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/20.png" class="img-fluid" alt="" width="2048" height="1536" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Schedule</h4>
                 <p>NEW YEAR CLASS</p>
@@ -485,7 +484,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/5.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/5.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Social 2</h4>
                 <p>Social</p>
@@ -499,7 +498,7 @@
 
            <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/9.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/9.png" class="img-fluid" alt="" width="1040" height="588" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Social 4</h4>
                 <p>Social</p>
@@ -513,7 +512,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/10.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/10.png" class="img-fluid" alt="" width="1280" height="960" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Social 5</h4>
                 <p>Social</p>
@@ -527,7 +526,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/11.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/11.png" class="img-fluid" alt="" width="1600" height="740" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Social 6</h4>
                 <p>Social</p>
@@ -541,7 +540,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/12.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/12.png" class="img-fluid" alt="" width="1280" height="960" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Debra</h4>
                 <p>Social</p>
@@ -555,7 +554,7 @@
 
            <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/13.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/13.png" class="img-fluid" alt="" width="1280" height="960" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Social 8</h4>
                 <p>Social</p>
@@ -569,7 +568,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/11.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/11.png" class="img-fluid" alt="" width="1600" height="740" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Social 5</h4>
                 <p>Social</p>
@@ -583,7 +582,7 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/7.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/7.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Education 1</h4>
                 <p>Education</p>
@@ -597,7 +596,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/8.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/8.png" class="img-fluid" alt="" width="500" height="500" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Education 3</h4>
                 <p>Education</p>
@@ -611,7 +610,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/9.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/9.png" class="img-fluid" alt="" width="1040" height="588" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Social 3</h4>
                 <p>Social</p>
@@ -625,7 +624,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-social">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/sahitya_basar.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/sahitya_basar.jpeg" class="img-fluid" alt="" width="1152" height="864" decoding="async" loading="lazy">
               <div class="portfolio-info">
                 <h4>Social 3</h4>
                 <p>Social</p>
@@ -644,11 +643,11 @@
 
    <!-- Founder Section -->
     <!-- <section id="features" class="features" data-aos="fade-up"> -->
-    <section id="founder" class="founder">
+    <section id="founder" class="founder cv-auto">
       <div class="container">
         <div class="row content">
           <div class="col-md-12" data-aos="fade-right" data-aos-delay="100" style="position:text-center">
-            <img src="assets/img/F2.png" class="img-fluid" alt="" width="300" height="300">
+            <img src="assets/img/F2.png" class="img-fluid" alt="" width="300" height="300" decoding="async" loading="lazy">
             <h4>Founder: Dr Sanmatha Nath Ghosh (18/09/1929 - 10/12/2021)</h4>
           </div>
         </div>
@@ -657,18 +656,18 @@
    <!-- End Founder Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+    <section id="team" class="team cv-auto">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Meet our Team</h2>
         </div>
 
-        <div class="row">
+        <div class="team-grid">
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="assets/img/team/Bipasha.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Bipasha.jpeg" class="img-fluid" alt="" width="534" height="658" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Bipasha Bairagi Mitra</h6>
@@ -684,9 +683,9 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/2.jpg" class="img-fluid" alt="" width="700" height="800" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Sujit Santra</h6>
@@ -702,9 +701,9 @@
             </div>
           </div>
       
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="assets/img/team/Debjani.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Debjani.jpeg" class="img-fluid" alt="" width="457" height="685" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Debjani Chakraborty</h6>
@@ -720,9 +719,9 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="assets/img/team/PK.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/PK.jpeg" class="img-fluid" alt="" width="284" height="396" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Plaban Mallick</h6>
@@ -738,20 +737,20 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="600">
             <div class="member">
-              <img src="assets/img/team/6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/6.jpg" class="img-fluid" alt="" width="700" height="800" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Madhumita Das</h6>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
                 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="600">
             <div class="member">
-              <img src="assets/img/team/7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/7.jpg" class="img-fluid" alt="" width="700" height="800" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Mrinmoyee Bhattacharyya</h6>
@@ -767,9 +766,9 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/12.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/12.jpg" class="img-fluid" alt="" width="700" height="800" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Lily Das</h6>
@@ -785,9 +784,9 @@
             </div>
           </div>
            
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/Madhumita.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Madhumita.jpeg" class="img-fluid" alt="" width="1326" height="1600" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Madhumita Banerjee</h6>
@@ -803,9 +802,9 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/20.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/20.jpg" class="img-fluid" alt="" width="700" height="800" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Uday Sarkar</h6>
@@ -821,9 +820,9 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/Sugata.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Sugata.jpeg" class="img-fluid" alt="" width="453" height="614" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Sugata Chakraborty</h6>
@@ -839,9 +838,9 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/Rajasree.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Rajasree.jpeg" class="img-fluid" alt="" width="614" height="649" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Rajasree Bhattacharyya</h6>
@@ -857,9 +856,9 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/24.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/24.jpg" class="img-fluid" alt="" width="700" height="800" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Bimal Bandyopadhyay</h6>
@@ -875,9 +874,9 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/Krishna.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Krishna.jpeg" class="img-fluid" alt="" width="502" height="629" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Krishna Chatterjee</h6>
@@ -893,9 +892,9 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/Soma.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Soma.jpeg" class="img-fluid" alt="" width="424" height="519" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Soma Polley</h6>
@@ -911,9 +910,9 @@
             </div>
           </div>
 
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/Malay.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Malay.jpeg" class="img-fluid" alt="" width="457" height="708" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Malay Sarkar</h6>
@@ -930,9 +929,9 @@
           </div>
 
                          
-    <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="200">
+    <div class="team-grid-item" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/Amit.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Amit.jpeg" class="img-fluid" alt="" width="413" height="531" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Amit Mukherjee</h6> 
@@ -948,9 +947,9 @@
             </div>
           </div>     
 
-      <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="team-grid-item" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/Gopal.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Gopal.jpeg" class="img-fluid" alt="" width="271" height="400" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Gopal Saha</h6>      
@@ -967,9 +966,9 @@
           </div>
 
                           
-          <div class="col-xl-1 col-lg-1 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/Soumika.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Soumika.jpeg" class="img-fluid" alt="" width="1361" height="1600" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Soumika Sarkar</h6>     
@@ -983,10 +982,11 @@
                 </div> -->
               </div>
             </div>
+          </div>
             
-          <div class="col-xl-90 col-lg-95 col-md-98" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-grid-item" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/Joydip.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Joydip.jpeg" class="img-fluid" alt="" width="520" height="686" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>JOYDIP MUKHERJEE</h6>
@@ -1002,9 +1002,9 @@
             </div>
            </div>   
             
-            <div class="col-xl-90 col-lg-95 col-md-98" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-grid-item" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/Tushar.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Tushar.jpeg" class="img-fluid" alt="" width="291" height="320" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Tushar Kanti Biswas</h6>
@@ -1020,9 +1020,9 @@
             </div>
           </div>
         
-      <div class="col-xl-90 col-lg-95 col-md-98" data-aos="fade-up" data-aos-delay="200">
+      <div class="team-grid-item" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/Jayati.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/team/Jayati.jpeg" class="img-fluid" alt="" width="1059" height="1280" decoding="async" loading="lazy">
               <div class="member-info">
                 <div class="member-info-content">
                   <h6>Jayati Sinha</h6>
@@ -1037,13 +1037,13 @@
               </div>
             </div>
           </div>
-                       
-              
+        </div>
+      </div>
     </section><!-- End Team Section -->
 
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
+    <section id="contact" class="contact section-bg cv-auto">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -1059,7 +1059,7 @@
               <div class="col-md-12">
                 <div class="info-box">
                   <!-- <i class="bx bx-map"></i> -->
-                  <img src="assets/img/B1.png" class="img-fluid" alt="" width="360" height="260">
+                  <img src="assets/img/B1.png" class="img-fluid" alt="" width="360" height="260" decoding="async" loading="lazy">
                   <h3>Our Address</h3>
                   <p>Netaji Bhawan, Club Road, Sukchar, North 24 Pgs., Kolkata-700115</p>
                 </div>
@@ -1207,15 +1207,10 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 

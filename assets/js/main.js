@@ -41,6 +41,26 @@
   }
 
   /**
+   * Load a script only when needed.
+   */
+  const loadScript = (src) => new Promise((resolve, reject) => {
+    const s = document.createElement('script')
+    s.src = src
+    s.defer = true
+    s.onload = resolve
+    s.onerror = reject
+    document.head.appendChild(s)
+  })
+
+  const onWindowLoad = (fn) => {
+    if (document.readyState === 'complete') {
+      fn()
+    } else {
+      window.addEventListener('load', fn)
+    }
+  }
+
+  /**
    * Navbar links active state on scroll
    */
   let navbarlinks = select('#navbar .scrollto', true)
@@ -148,112 +168,168 @@
     });
   }
 
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
-      });
+  const initPortfolioIsotope = () => {
+    onWindowLoad(() => {
+      let portfolioContainer = select('.portfolio-container')
+      if (portfolioContainer && window.Isotope) {
+        let portfolioIsotope = new Isotope(portfolioContainer, {
+          itemSelector: '.portfolio-item'
+        })
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+        let portfolioFilters = select('#portfolio-flters li', true)
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
+        on('click', '#portfolio-flters li', function(e) {
+          e.preventDefault()
+          portfolioFilters.forEach(function(el) {
+            el.classList.remove('filter-active')
+          })
+          this.classList.add('filter-active')
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
-    }
-
-  });
-
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
+          portfolioIsotope.arrange({
+            filter: this.getAttribute('data-filter')
+          })
+          portfolioIsotope.on('arrangeComplete', function() {
+            if (window.AOS) {
+              AOS.refresh()
+            }
+          })
+        }, true)
       }
-    }
-  });
-
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
     })
-  });
+  }
 
-  /*
-Bizz Bar
-*/
+  const initPortfolioLightbox = () => {
+    if (window.GLightbox) {
+      GLightbox({
+        selector: '.portfolio-lightbox'
+      })
+    }
+  }
 
-// $("#bizzbar").effect("bounce","slow");
-// $("open").slideUp()})});$(document).ready(function()$("#bizzbar").effect("bounce","slow");
-// $("close").click(function(){$("#bizzbar").slideUp();$("open").slideDown()});
+  const initPortfolioDetailsSlider = () => {
+    if (window.Swiper) {
+      new Swiper('.portfolio-details-slider', {
+        speed: 400,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        }
+      })
+    }
+  }
 
-// $("open").click(function(){$("#bizzbar").effect("bounce","slow");$("open").slideUp()})});$(document).ready(function(){$("#bizzbar").effect("bounce","slow");$("close").click(function(){$("#bizzbar").slideUp();$("open").slideDown()})
- 
+  const initTestimonialsSlider = () => {
+    if (window.Swiper) {
+      new Swiper('.testimonials-slider', {
+        speed: 600,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        slidesPerView: 'auto',
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          }
+        }
+      })
+    }
+  }
+
+  const initAOS = () => {
+    onWindowLoad(() => {
+      if (window.AOS) {
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+          mirror: false
+        })
+      }
+    })
+  }
+
+  const initBizzbar = () => {
+    if (!window.jQuery || !jQuery.fn || !jQuery.fn.effect) {
+      return
+    }
+
+    jQuery(function($) {
+      $('open').on('click', function() {
+        $('#bizzbar').effect('bounce', 'slow')
+        $('open').slideUp()
+      })
+      $('#bizzbar').effect('bounce', 'slow')
+      $('close').on('click', function() {
+        $('#bizzbar').slideUp()
+        $('open').slideDown()
+      })
+    })
+  }
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    const hasPortfolio = !!select('.portfolio-container')
+    const hasPortfolioLightbox = !!select('.portfolio-lightbox')
+    const hasPortfolioDetails = !!select('.portfolio-details-slider')
+    const hasTestimonials = !!select('.testimonials-slider')
+    const hasAOS = !!document.querySelector('[data-aos]')
+    const hasEmailForm = !!select('.php-email-form')
+    const hasBizzbar = !!select('#bizzbar')
+
+    if (hasAOS) {
+      await loadScript('assets/vendor/aos/aos.js')
+      initAOS()
+    }
+
+    if (hasPortfolio) {
+      await loadScript('assets/vendor/isotope-layout/isotope.pkgd.min.js')
+      initPortfolioIsotope()
+    }
+
+    if (hasPortfolioLightbox) {
+      await loadScript('assets/vendor/glightbox/js/glightbox.min.js')
+      initPortfolioLightbox()
+    }
+
+    if (hasPortfolioDetails || hasTestimonials) {
+      await loadScript('assets/vendor/swiper/swiper-bundle.min.js')
+    }
+
+    if (hasPortfolioDetails) {
+      initPortfolioDetailsSlider()
+    }
+
+    if (hasTestimonials) {
+      initTestimonialsSlider()
+    }
+
+    if (hasEmailForm) {
+      await loadScript('assets/vendor/php-email-form/validate.js')
+    }
+
+    if (hasBizzbar) {
+      await loadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+      await loadScript('https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js')
+      initBizzbar()
+    }
+  })
 
 })()
-
-$(document).ready(function(){$("open").click(function(){$("#bizzbar").effect("bounce","slow");$("open").slideUp()})});$(document).ready(function(){$("#bizzbar").effect("bounce","slow");$("close").click(function(){$("#bizzbar").slideUp();$("open").slideDown()})});
